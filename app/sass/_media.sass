@@ -1,0 +1,348 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+
+//Extra large: ≥1440px
++media-breakpoint-down(xl)
+
+//Large: ≥1200px  max-width: 1439px
++media-breakpoint-down(lg)
+	.nav
+		&-list
+			&__item
+				font-size: 13px
+	.head
+		&-txt
+			top: 80px
+		&-ttl
+			font-size: 46px
+		&-ico
+			&.i5
+				display: none
+	.calc
+		&-form
+			&__note
+				margin: 0 0 20px 0
+	.quest
+		&-img
+			max-width: 80%
+			left: 100px
+	.insurance
+		&-item
+			&__ttl
+				font-size: 22px
+			&__price
+				font-size: 22px
+			&__summa
+				font-size: 18px
+			&__prize
+				font-size: 18px
+				&:before
+					top: -3px
+
+//Medium: ≥992px max-width: 1199px
++media-breakpoint-down(md)
+	.head
+		&-ico
+			&.i1, &.i2
+				display: none
+	.calc
+		&-form
+			&__note
+				min-height: 38px
+			&__ttl
+				margin-top: 30px
+			&__info
+				display: table
+				margin: 0 auto 30px
+	.quest
+		&-ttl
+			float: left
+		&-img
+			position: static
+			float: right
+			margin-bottom: 30px
+	.insurance
+		padding-top: 0
+		padding-bottom: 50px
+	.partners
+		&-item
+			img
+				max-width: 90%
+	.article
+		background-color: #f0f0ec
+		margin-top: 0
+		padding-top: 115px
+		.container
+			&:before
+				display: none
+	.reviews
+		&-slider 
+			.slick-arrow
+				&.slick-prev
+					left: 10%
+				&.slick-next
+					right: 10%
+
+//Small: ≥768px max-width: 991px
++media-breakpoint-down(sm)
+	.head
+		&-ico
+			&.i3, &.i4
+				display: none
+	.nav
+		background: #fff
+		&-list
+			display: block
+			&__item
+				text-align: left
+				font-size: 16px
+				margin-bottom: 10px
+				&:last-child
+					margin-bottom: 0
+				a
+					color: #fff
+					&:before
+						content: ''
+						left: 0
+						margin-left: 0
+		&-logo
+			max-width: 160px
+	.lang
+		position: static
+		margin-top: 10px
+		&-item
+			color: #fff
+			border-color: #fff
+			&:hover, &.active
+				background-color: #fff
+				color: #000
+	.mob
+		&-menu
+			transition: all ease .3s
+			max-height: 0
+			overflow: hidden
+			width: 100%
+			position: absolute
+			display: block
+			top: 82px
+			left: 0
+			padding: 0 0
+			background: linear-gradient(330.66deg, #E20610 10.32%, #BE0606 95%), linear-gradient(154.74deg, #E20610 13.82%, #BE0606 75.21%)
+			&__link
+				float: right
+				img
+					width: 30px
+			&.show
+				transition: all ease .3s
+				max-height: 500px
+				padding: 20px 0
+	.hidden
+		z-index: -1
+		display: none
+		width: 100vw
+		height: 100vh
+		position: absolute
+		background-color: rgba(#fff, 0.5)
+		top: 0
+		left: 0
+		&.show
+			display: block
+	.head
+		&:before
+			display: none
+		&-ttl
+			text-align: center
+		&-subttl
+			text-align: center
+			margin-bottom: 0
+		&-img
+			float: none
+			margin: 0 auto 20px
+		&-txt
+			margin: 0 auto
+			position: static
+			text-align: center
+			margin-bottom: 20px
+		&-btn
+			margin: 0 auto
+	.service
+		&-ttl
+			display: table
+			margin: 0 auto
+	.calc
+		&-form
+			&__btn
+				span
+					font-size: 14px
+					margin-right: 20px
+			&__note
+				min-height: inherit
+			&__input
+				margin-bottom: 30px
+				&.rfield
+					margin-bottom: 0
+			&__wrap
+				margin-bottom: 30px
+			&__ttl
+				margin-top: 0
+	.vacancy
+		&-item
+			margin: 0
+	.quest
+		&-img
+			max-width: 50%
+	.insurance
+		&:before
+			display: none
+	.about
+		&-ttl
+			margin-left: 0
+		&-txt
+			&:last-child
+				margin-bottom: 30px
+	.partners
+		&-ttl
+			margin-bottom: 30px
+	.reviews
+		&-slider
+			.slick-dots
+				li
+					width: 10px
+	.map
+		display: block
+		height: 250px
+		margin-top: 30px
+	.foot
+		&-logo
+			margin: 0 auto
+		&-list
+			margin-bottom: 30px
+	.modal
+		max-width: 100%
+		padding: 100px 30px 60px
+
+//Extra small: ≥576px max-width: 767px
++media-breakpoint-down(xs)
+	.calc
+		&-ico
+			display: none
+	.vacancy
+		&-name
+			margin-bottom: 20px
+			&__logo
+				display: none
+	.scheme
+		&-item
+			&__img
+				margin-bottom: 20px
+			&__wrap
+				margin-left: 0
+	.quest
+		&-ttl
+			float: none
+			margin: 0 auto 30px
+		&-img
+			display: none
+		&-form
+			.rline
+				max-width: inherit
+				width: 100%
+				float: none
+			&__btn
+				margin: 0 auto 30px
+	.foot
+		&-list
+			margin-bottom: 0
+			&__item
+				text-align: center
+				&:last-child
+					margin-bottom: 10px
+		&-phone
+			text-align: center
+			&:nth-child(1)
+				margin-top: 20px
+		&-soc
+			width: fit-content
+			margin: 30px auto
+	.dev
+		margin: 0 auto
+		span
+			text-align: center
+		img
+			margin: 0 auto
+	.modal
+		padding: 60px 30px
+		&-form
+			&__ttl
+				font-size: 26px
+			&__wrap
+				display: block
+			.rline
+				width: 100%
+				max-width: inherit
+				margin-bottom: 20px
+			&__btn
+				margin: 0 auto
+
+//Extra small: >0 max-width: 575px
++media-breakpoint-down(xxs)
+	.head
+		&-ttl
+			font-size: 32px
+		&-subttl
+			font-size: 18px
+		&-txt
+			font-size: 18px
+		&-btn
+			span
+				font-size: 16px
+	.service
+		&-btn
+			span
+				font-size: 16px
+	.calc
+		&-form
+			&__info
+				display: block
+			.rline
+				max-width: inherit
+				float: none
+				margin-right: 0
+				margin-bottom: 30px
+			&__btn
+				margin: 0 auto 0
+	.news
+		&-slider
+			padding: 0 60px
+			&__slide
+				margin: 0
+		&-item
+			&__btn
+				span
+					font-size: 14px
+					margin-right: 10px
+	.work
+		&-btn
+			span
+				font-size: 16px
+
+
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)
